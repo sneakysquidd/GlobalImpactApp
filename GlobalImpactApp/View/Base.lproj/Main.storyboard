@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Impact View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ImpactViewController" customModule="GlobalImpactApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x2v-CK-jVr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-Mc-ayj">
+                                <rect key="frame" x="107" y="336" width="161" height="30"/>
+                                <state key="normal" title="Animate to Impact Area">
+                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="MapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6x1-cF-SRY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-Eu-SuN">
+                                <rect key="frame" x="166" y="536" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izk-Ux-pGJ">
+                                <rect key="frame" x="0.0" y="402" width="375" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="jiF-Tg-Bqm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="62T-if-ugQ"/>
+                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="centerX" secondItem="xnS-Eu-SuN" secondAttribute="centerX" id="7JN-lU-XpC"/>
+                            <constraint firstItem="xnS-Eu-SuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="BHJ-dr-Ag4"/>
+                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="top" secondItem="x2v-CK-jVr" secondAttribute="bottom" constant="37" id="EQH-Di-Z8H"/>
+                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Fp3-8A-k98"/>
+                            <constraint firstItem="izk-Ux-pGJ" firstAttribute="top" secondItem="Srs-Mc-ayj" secondAttribute="bottom" constant="36" id="ISX-AG-VtT"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="JRY-b5-ED3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xnS-Eu-SuN" secondAttribute="bottom" constant="110" id="KGK-2B-ADX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2v-CK-jVr" secondAttribute="trailing" constant="69" id="iRm-cT-kWp"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="trailing" secondItem="izk-Ux-pGJ" secondAttribute="trailing" id="r4c-hF-NgV"/>
+                            <constraint firstItem="xnS-Eu-SuN" firstAttribute="top" secondItem="izk-Ux-pGJ" secondAttribute="bottom" constant="41" id="vTk-To-hqL"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="leading" secondItem="izk-Ux-pGJ" secondAttribute="leading" id="yIm-ta-T5F"/>
+                            <constraint firstItem="izk-Ux-pGJ" firstAttribute="centerX" secondItem="xnS-Eu-SuN" secondAttribute="centerX" id="z8v-ks-23c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="MapButton" destination="Srs-Mc-ayj" id="cxv-XM-Us9"/>
+                        <outlet property="MapImageView" destination="izk-Ux-pGJ" id="yoP-sk-jky"/>
+                        <outlet property="MapView" destination="x2v-CK-jVr" id="XYm-8J-uAI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
