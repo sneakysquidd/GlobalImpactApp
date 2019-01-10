@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x2v-CK-jVr">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="x2v-CK-jVr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-Mc-ayj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-Mc-ayj">
                                 <rect key="frame" x="107" y="336" width="161" height="30"/>
                                 <state key="normal" title="Animate to Impact Area">
                                     <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,32 +31,34 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-Eu-SuN">
                                 <rect key="frame" x="166" y="536" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Qnd-1D-M2K"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izk-Ux-pGJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="izk-Ux-pGJ">
                                 <rect key="frame" x="0.0" y="402" width="375" height="93"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="jiF-Tg-Bqm"/>
+                                    <constraint firstAttribute="height" constant="93" id="iYy-lF-vMH"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="x2v-CK-jVr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="62T-if-ugQ"/>
-                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="centerX" secondItem="xnS-Eu-SuN" secondAttribute="centerX" id="7JN-lU-XpC"/>
-                            <constraint firstItem="xnS-Eu-SuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="BHJ-dr-Ag4"/>
-                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="top" secondItem="x2v-CK-jVr" secondAttribute="bottom" constant="37" id="EQH-Di-Z8H"/>
-                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="Fp3-8A-k98"/>
-                            <constraint firstItem="izk-Ux-pGJ" firstAttribute="top" secondItem="Srs-Mc-ayj" secondAttribute="bottom" constant="36" id="ISX-AG-VtT"/>
-                            <constraint firstItem="x2v-CK-jVr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="JRY-b5-ED3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xnS-Eu-SuN" secondAttribute="bottom" constant="110" id="KGK-2B-ADX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x2v-CK-jVr" secondAttribute="trailing" constant="69" id="iRm-cT-kWp"/>
-                            <constraint firstItem="x2v-CK-jVr" firstAttribute="trailing" secondItem="izk-Ux-pGJ" secondAttribute="trailing" id="r4c-hF-NgV"/>
-                            <constraint firstItem="xnS-Eu-SuN" firstAttribute="top" secondItem="izk-Ux-pGJ" secondAttribute="bottom" constant="41" id="vTk-To-hqL"/>
-                            <constraint firstItem="x2v-CK-jVr" firstAttribute="leading" secondItem="izk-Ux-pGJ" secondAttribute="leading" id="yIm-ta-T5F"/>
-                            <constraint firstItem="izk-Ux-pGJ" firstAttribute="centerX" secondItem="xnS-Eu-SuN" secondAttribute="centerX" id="z8v-ks-23c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xnS-Eu-SuN" secondAttribute="bottom" constant="110" id="4zM-cN-QTx"/>
+                            <constraint firstItem="xnS-Eu-SuN" firstAttribute="top" secondItem="izk-Ux-pGJ" secondAttribute="bottom" constant="41" id="5EC-Mf-cIB"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="leading" secondItem="izk-Ux-pGJ" secondAttribute="leading" id="8lW-UT-aw7"/>
+                            <constraint firstItem="izk-Ux-pGJ" firstAttribute="top" secondItem="Srs-Mc-ayj" secondAttribute="bottom" constant="36" id="HRM-RQ-pye"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VqS-nX-rSr"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jr1-Os-xW5"/>
+                            <constraint firstItem="izk-Ux-pGJ" firstAttribute="centerX" secondItem="xnS-Eu-SuN" secondAttribute="centerX" id="ldT-sp-ITU"/>
+                            <constraint firstAttribute="trailing" secondItem="x2v-CK-jVr" secondAttribute="trailing" id="lrR-k2-avX"/>
+                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="top" secondItem="x2v-CK-jVr" secondAttribute="bottom" constant="37" id="m5V-fN-644"/>
+                            <constraint firstItem="xnS-Eu-SuN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="yTb-6l-3PE"/>
+                            <constraint firstItem="Srs-Mc-ayj" firstAttribute="centerX" secondItem="izk-Ux-pGJ" secondAttribute="centerX" id="zqp-7j-Wzz"/>
+                            <constraint firstItem="x2v-CK-jVr" firstAttribute="trailing" secondItem="izk-Ux-pGJ" secondAttribute="trailing" id="zua-0E-FsL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -64,6 +66,7 @@
                         <outlet property="MapButton" destination="Srs-Mc-ayj" id="cxv-XM-Us9"/>
                         <outlet property="MapImageView" destination="izk-Ux-pGJ" id="yoP-sk-jky"/>
                         <outlet property="MapView" destination="x2v-CK-jVr" id="XYm-8J-uAI"/>
+                        <outlet property="mapButton" destination="Srs-Mc-ayj" id="Qye-u7-O8t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

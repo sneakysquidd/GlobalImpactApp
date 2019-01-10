@@ -14,6 +14,7 @@ public class ImpactViewController: UIViewController
 
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var MapImageView: UIImageView!
+    @IBOutlet weak var mapButton: UIButton!
     @IBAction func MapButton(_ sender: Any)
     {
         let impactLocation = CLLocationCoordinate2D(latitude: 1.3733, longitude: 32.2903)
@@ -27,14 +28,13 @@ public class ImpactViewController: UIViewController
         super.viewDidLoad()
     }
 
-
 }
 
 extension MKMapView
 {
     public func animatedZoom(zoomRegion:MKCoordinateRegion, duration:TimeInterval)
     {
-        MKMapView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: UIView.AnimationOptions.curveEaseIn, animations:
+        MKMapView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 20, options: UIView.AnimationOptions.curveEaseIn, animations:
             { self.setRegion(zoomRegion, animated: true) }, completion: nil)
         
     }
